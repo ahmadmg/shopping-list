@@ -10,17 +10,19 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    
     margin: 30px auto;
+    max-width: 400px;
 }
 
 img {
-    width: 150px;
+    width: 80%;
+    border-radius: 12px;
     margin: 0 auto;
 }
 
 input {
-    color: #432000;
+    color: #454f9a;
     background-color: #DCE1EB;
     border: 0;
     padding: 15px;
@@ -33,7 +35,7 @@ input {
 
 button {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: #0c9ecb;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -69,3 +71,8 @@ ul li:hover {
     background-color: #FFECC7;
     cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 95%;
+    }
+  }
